@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> أحمد ادم — مصمم تطبيقات الويب ومطور واجهات Frontend Developer</title>
+  <title>أحمد آدم — مصمم تطبيقات ويب ومطوّر واجهات</title>
   <meta name="description"
-    content="بورتفوليو أحمد أدم ،  مصمم تطبيقات الويب ومطور واجهات  Web Application Designer and Frontend Developer متخصص في بناء منتجات ويب سريعة وموثوقة.">
+    content="ملف أعمال أحمد آدم، مصمم تطبيقات ويب ومطوّر واجهات متخصص في بناء مواقع واضحة، سريعة، ومتجاوبة.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=Tajawal:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Noto+Kufi+Arabic:wght@500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-human.css">
 </head>
 
 <body>
@@ -24,10 +24,17 @@
   </div>
 
   <header id="siteHeader">
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
     <nav>
-      <div class="logo"><span class="logo-mark"><img src="assets/images/logo-dark.png" alt=""></span> <span data-i18n="nav.name">أحمد ادم</span></div>
+      <a class="logo" href="#" aria-label="العودة إلى بداية الصفحة">
+        <span class="logo-frame">
+          <img class="brand-logo brand-logo-dark" src="assets/images/logo-dark-custom.png" alt="شعار أحمد آدم">
+          <img class="brand-logo brand-logo-light" src="assets/images/logo-light-custom.png" alt="شعار أحمد آدم">
+        </span>
+      </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about" class="nav-link" data-i18n="nav.about">نبذة</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="nav.services">الخدمات</a></li>
         <li><a href="#skills" class="nav-link" data-i18n="nav.skills">المهارات</a></li>
         <li><a href="#projects" class="nav-link" data-i18n="nav.projects">المشاريع</a></li>
         <li><a href="#experience" class="nav-link" data-i18n="nav.experience">المسيرة</a></li>
@@ -50,31 +57,36 @@
     <!-- HERO -->
     <section class="hero wrap">
       <div class="hero-grid">
-        <div>
-          <span class="eyebrow"><span class="dot"></span> <span data-i18n="hero.eyebrow">متاح لمشاريع تصمم تطبيقات الويب
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> <span data-i18n="hero.eyebrow">متاح لمشاريع تصميم تطبيقات الويب
               وتطوير واجهات الويب وتعاون عن بُعد</span></span>
-          <h1 data-i18n-html="hero.title"> مصمم تطبيقات الويب ومطور واجهات <span>سريعة، واضحة</span>، وتشتغل صح.</h1>
-          <p class="hero-lead" data-i18n="hero.lead">أحمد ادم ،مصمم و مطوّر واجهات الويب Web Application Designer and
-            Frontend Developer. أحوّل الفكرة إلى واجهة مستخدم مصقولة وخلفية موثوقة — من أول سطر كود لحد التشغيل الفعلي.
-          </p>
+          <h1 data-i18n-html="hero.title">أصمّم وأطوّر مواقع <span>واضحة وسهلة</span>، من الفكرة إلى آخر تفصيلة.</h1>
+          <p class="hero-lead" data-i18n="hero.lead">أنا أحمد آدم، مصمم تطبيقات ويب ومطوّر واجهات. أحب الواجهات الهادئة، والكود المرتّب، والحلول التي تجعل استخدام الموقع طبيعيًا من أول زيارة.</p>
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">مشاريعي</a>
             <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaContact">تواصل معي مباشرة</a>
+            <a href="assets/documents/Ahmed-Adam-CV.pdf" class="btn btn-cv" download data-i18n="hero.ctaCv">تحميل السيرة الذاتية</a>
           </div>
           <div class="hero-stats">
             <div class="stat"><b>+2</b><span data-i18n="hero.stat1">سنوات خبرة</span></div>
             <div class="stat"><b>+5</b><span data-i18n="hero.stat2">مشروع منجز</span></div>
-            <!-- <div class="stat"><b>18</b><span data-i18n="hero.stat3">عميل راضٍ</span></div> -->
+            <div class="stat"><b>+5</b><span data-i18n="hero.stat3">عميل راضٍ</span></div>
           </div>
         </div>
 
-        <div class="terminal" aria-hidden="true">
-          <div class="term-bar">
-            <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
-            <span class="term-title">profile.js</span>
+        <aside class="hero-note" aria-label="ملاحظات شخصية عن طريقة العمل">
+          <div class="note-topline">
+            <span data-i18n="hero.noteLabel">ملاحظات من المكتب</span>
+            <span>2026 / 08</span>
           </div>
-          <div class="term-body" id="typeTarget"></div>
-        </div>
+          <p class="note-quote" data-i18n="hero.noteQuote">«التصميم الجيد لا يحتاج أن يشرح نفسه كثيرًا.»</p>
+          <div class="note-list">
+            <div><span>01</span><p data-i18n="hero.note1">أفهم المشكلة قبل أن أفتح محرر الكود.</p></div>
+            <div><span>02</span><p data-i18n="hero.note2">أبني للجوال أولًا، ثم أوسّع التجربة.</p></div>
+            <div><span>03</span><p data-i18n="hero.note3">أراجع التفاصيل الصغيرة قبل التسليم.</p></div>
+          </div>
+          <div class="note-signature">Ahmed Adam — Web Designer & Developer</div>
+        </aside>
       </div>
     </section>
 
@@ -88,9 +100,9 @@
 
       <div class="about-grid">
         <div class="about-card reveal">
-          <div class="row"><span data-i18n="about.row1k">الاسم</span> <span data-i18n="about.row1v">أحمد ادم</span>
+          <div class="row"><span data-i18n="about.row1k">الاسم</span> <span data-i18n="about.row1v">أحمد آدم</span>
           </div>
-          <div class="row"><span data-i18n="about.row2k">التخصص</span> <span data-i18n="about.row2v">Web App Designer & Frontend Developer</span></div>
+          <div class="row"><span data-i18n="about.row2k">التخصص</span> <span data-i18n="about.row2v">مصمم تطبيقات ويب ومطور واجهات أمامية</span></div>
           <div class="row"><span data-i18n="about.row3k">المقر</span><span data-i18n="about.row3v"> السودان</span></div>
           <div class="row"><span data-i18n="about.row4k">العمل عن بُعد</span><span data-i18n="about.row4v">متاح</span>
           </div>
@@ -110,10 +122,46 @@
       </div>
     </section>
 
+    <!-- SERVICES -->
+    <section id="services" class="wrap">
+      <div class="section-head reveal">
+        <span class="section-tag" data-i18n="services.tag">02 — كيف أساعدك</span>
+        <h2 data-i18n="services.title">خدمات تبدأ من المشكلة، لا من القالب</h2>
+        <p data-i18n="services.subtitle">أساعد الأفراد والفرق الصغيرة في تحويل الفكرة إلى موقع واضح، سريع، وقابل للاستخدام على مختلف الأجهزة.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-item reveal">
+          <span class="service-number">01</span>
+          <h3 data-i18n="services.s1.title">تصميم واجهات الويب</h3>
+          <p data-i18n="services.s1.desc">ترتيب المحتوى وبناء واجهات هادئة تعكس هوية المشروع وتسهّل وصول المستخدم إلى ما يحتاجه.</p>
+          <span class="service-deliverable" data-i18n="services.s1.meta">هيكلة المحتوى · UI · Responsive</span>
+        </article>
+        <article class="service-item reveal">
+          <span class="service-number">02</span>
+          <h3 data-i18n="services.s2.title">تطوير الواجهات</h3>
+          <p data-i18n="services.s2.desc">تحويل التصميم إلى صفحات سريعة ومتجاوبة بكود منظم، مع اهتمام بالتفاصيل والوصولية.</p>
+          <span class="service-deliverable" data-i18n="services.s2.meta">HTML · CSS · JavaScript</span>
+        </article>
+        <article class="service-item reveal">
+          <span class="service-number">03</span>
+          <h3 data-i18n="services.s3.title">تحسين موقع قائم</h3>
+          <p data-i18n="services.s3.desc">مراجعة تجربة الموقع الحالية وإصلاح مشاكل العرض على الجوال، البطء، وعدم وضوح التنقل.</p>
+          <span class="service-deliverable" data-i18n="services.s3.meta">UX Review · Performance · Fixes</span>
+        </article>
+        <article class="service-item reveal">
+          <span class="service-number">04</span>
+          <h3 data-i18n="services.s4.title">دعم وتطوير مستمر</h3>
+          <p data-i18n="services.s4.desc">إضافة صفحات وخصائص جديدة، معالجة الأخطاء، والمحافظة على جودة الموقع بعد إطلاقه.</p>
+          <span class="service-deliverable" data-i18n="services.s4.meta">Updates · Maintenance · Support</span>
+        </article>
+      </div>
+    </section>
+
     <!-- SKILLS -->
     <section id="skills" class="wrap">
       <div class="section-head reveal">
-        <span class="section-tag" data-i18n="skills.tag">02 — الأدوات</span>
+        <span class="section-tag" data-i18n="skills.tag">03 — الأدوات</span>
         <h2 data-i18n="skills.title">المهارات والتقنيات</h2>
         <p data-i18n="skills.subtitle">مجموعة الأدوات اللي بستخدمها يوميًا لبناء منتجات متكاملة من الواجهة للخلفية.</p>
       </div>
@@ -155,7 +203,7 @@
     <!-- PROJECTS -->
     <section id="projects" class="wrap">
       <div class="section-head reveal">
-        <span class="section-tag" data-i18n="projects.tag">03 — أعمالي</span>
+        <span class="section-tag" data-i18n="projects.tag">04 — أعمالي</span>
         <h2 data-i18n="projects.title">مشاريع مختارة</h2>
         <p data-i18n="projects.subtitle">نماذج من مشاريع عملت عليها، والتي تبرز خبرتي في تحويل الأفكار إلى منتجات رقمية
           فعّالة.</p>
@@ -168,16 +216,21 @@
           </div>
           <div class="project-body">
             <h3 data-i18n="projects.p1.title">منصة تجارة إلكترونية</h3>
-            <p data-i18n="projects.p1.desc">واجهة متجر متكاملة مع لوحة تحكم للتجار، بوابة دفع، وتتبّع طلبات لحظي.</p>
+            <p data-i18n="projects.p1.desc">واجهة متجر إلكتروني متجاوبة تعرض المنتجات ضمن تجربة شراء واضحة وسهلة التصفح.</p>
+            <dl class="case-study">
+              <div><dt data-i18n="projects.case.role">الدور</dt><dd data-i18n="projects.p1.role">تصميم وتطوير الواجهة</dd></div>
+              <div><dt data-i18n="projects.case.challenge">التحدي</dt><dd data-i18n="projects.p1.challenge">تنظيم المنتجات مع الحفاظ على وضوح التصفح في الشاشات الصغيرة.</dd></div>
+              <div><dt data-i18n="projects.case.outcome">النتيجة</dt><dd data-i18n="projects.p1.outcome">واجهة متجاوبة ومسار مباشر من استكشاف المنتج إلى تفاصيله.</dd></div>
+            </dl>
             <div class="project-tags">
               <span class="tag-mini">bootstrap</span>
               <!-- <span class="tag-mini"></span><span class="tag-mini"></span> -->
             </div>
             <div class="project-links">
-              <a href="https://ahmed-98-wq.github.io/Ecommerce-Website/" data-i18n="projects.live">زيارة الموقع ↗</a>
+              <a href="https://ahmed-98-wq.github.io/Ecommerce-Website/" target="_blank" rel="noopener" data-i18n="projects.live">زيارة الموقع ↗</a>
               <!-- <a href="#" data-i18n="projects.code">الكود المصدري ↗</a> -->
-              <a href="https://github.com/ahmed-98-wq/Ecommerce-Website" data-i18n="projects.code" target="_blank"
-                rel="noopener">الكود المصدري ↗</a>
+              <!-- <a href="https://github.com/ahmed-98-wq/Ecommerce-Website" data-i18n="projects.code" target="_blank"
+                rel="noopener">الكود المصدري ↗</a> -->
             </div>
           </div>
         </article>
@@ -188,17 +241,22 @@
           </div>
           <div class="project-body">
             <h3 data-i18n="projects.p2.title">موقع شركة زاكي للانتاج المحدود</h3>
-            <p data-i18n="projects.p2.desc"> يعرض الموقع منتجات الشركة واسعارها ، ومعرضا لصور المنتجات</p>
+            <p data-i18n="projects.p2.desc">موقع تعريفي يعرض منتجات الشركة وأسعارها ومعرض الصور ضمن بنية بسيطة وواضحة.</p>
+            <dl class="case-study">
+              <div><dt data-i18n="projects.case.role">الدور</dt><dd data-i18n="projects.p2.role">التصميم وتطوير الواجهة</dd></div>
+              <div><dt data-i18n="projects.case.challenge">التحدي</dt><dd data-i18n="projects.p2.challenge">عرض المنتجات والأسعار والصور دون ازدحام المحتوى.</dd></div>
+              <div><dt data-i18n="projects.case.outcome">النتيجة</dt><dd data-i18n="projects.p2.outcome">موقع خفيف يسهّل استعراض منتجات الشركة من الهاتف والحاسوب.</dd></div>
+            </dl>
             <div class="project-tags">
               <span class="tag-mini">Html</span><span class="tag-mini">Css</span><span
                 class="tag-mini">Javascript</span>
             </div>
             <div class="project-links">
-              <a href="https://ahmed-98-wq.github.io/Zakii-multi-production-LTD/" data-i18n="projects.live">زيارة الموقع
+              <a href="https://ahmed-98-wq.github.io/Zakii-multi-production-LTD/" target="_blank" rel="noopener" data-i18n="projects.live">زيارة الموقع
                 ↗</a>
               <!-- <a href="#" data-i18n="projects.code">الكود المصدري ↗</a> -->
-              <a href="https://github.com/ahmed-98-wq/Zakii-multi-production-LTD" data-i18n="projects.code"
-                target="_blank" rel="noopener">الكود المصدري ↗</a>
+              <!-- <a href="https://github.com/ahmed-98-wq/Zakii-multi-production-LTD" data-i18n="projects.code"
+                target="_blank" rel="noopener">الكود المصدري ↗</a> -->
             </div>
           </div>
         </article>
@@ -209,17 +267,21 @@
           </div>
           <div class="project-body">
             <h3 data-i18n="projects.p3.title">موقع وكالة اسكاي واي</h3>
-            <p data-i18n="projects.p3.desc">تطبيق ويب يساعد العملاء في حجز تذاكر رحلاتهم الى وجهاتهم المختلفة مع توفير
-              خدمة حجز فنادق </p>
+            <p data-i18n="projects.p3.desc">واجهة لوكالة سفر تساعد العملاء على استكشاف الرحلات وخدمات حجز الفنادق.</p>
+            <dl class="case-study">
+              <div><dt data-i18n="projects.case.role">الدور</dt><dd data-i18n="projects.p3.role">تصميم وتطوير الواجهة</dd></div>
+              <div><dt data-i18n="projects.case.challenge">التحدي</dt><dd data-i18n="projects.p3.challenge">جمع خدمات السفر والوجهات والفنادق في تجربة واحدة سهلة.</dd></div>
+              <div><dt data-i18n="projects.case.outcome">النتيجة</dt><dd data-i18n="projects.p3.outcome">مسار واضح يقود الزائر من استكشاف الوجهة إلى طلب الحجز.</dd></div>
+            </dl>
             <div class="project-tags">
               <span class="tag-mini">Html</span><span class="tag-mini">Css</span><span
                 class="tag-mini">Javascript</span>
             </div>
             <div class="project-links">
-              <a href="https://ahmed-98-wq.github.io/Skyway/" data-i18n="projects.live">زيارة الموقع↗</a>
+              <a href="https://ahmed-98-wq.github.io/Skyway/" target="_blank" rel="noopener" data-i18n="projects.live">زيارة الموقع↗</a>
               <!-- <a href="#" data-i18n="projects.code">الكود المصدري ↗</a> -->
-              <a href="https://github.com/ahmed-98-wq/Skyway" data-i18n="projects.code" target="_blank"
-                rel="noopener">الكود المصدري ↗</a>
+              <!-- <a href="https://github.com/ahmed-98-wq/Skyway" data-i18n="projects.code" target="_blank"
+                rel="noopener">الكود المصدري ↗</a> -->
             </div>
           </div>
         </article>
@@ -229,7 +291,7 @@
     <!-- EXPERIENCE -->
     <section id="experience" class="wrap">
       <div class="section-head reveal">
-        <span class="section-tag" data-i18n="exp.tag">04 — المسيرة المهنية</span>
+        <span class="section-tag" data-i18n="exp.tag">05 — المسيرة المهنية</span>
         <h2 data-i18n="exp.title">الخبرة والتعليم</h2>
         <p data-i18n="exp.subtitle">محطات رئيسية بترتيب زمني في مشواري المهني والدراسي.</p>
       </div>
@@ -238,22 +300,20 @@
         <div class="t-item reveal">
           <div class="t-marker">01</div>
           <span class="t-meta" data-i18n="exp.t1.meta">2023 — الآن</span>
-          <h3 data-i18n="exp.t1.title"> منظمة السواعد الخضراء</h3>
-          <p data-i18n="exp.t1.desc"> اعمل كمتطوع</p>
+          <h3 data-i18n="exp.t1.title">متطوع — منظمة السواعد الخضراء</h3>
+          <p data-i18n="exp.t1.desc">أساهم في الدعم الفني والمتابعة والتقييم ضمن عملي التطوعي في المنظمة.</p>
         </div>
         <div class="t-item reveal">
           <div class="t-marker">02</div>
           <span class="t-meta" data-i18n="exp.t2.meta">2023</span>
-          <h3 data-i18n="exp.t2.title"> مصصم و مطوّر موقع — وكالة سفر</h3>
-          <p data-i18n="exp.t2.desc">تصميم وتطوير واجهات لعملاء متنوعين، مع تركيز على الأداء وتجربة المستخدم على الجوال.
-          </p>
+          <h3 data-i18n="exp.t2.title">مصمم ومطوّر موقع — وكالة سفر</h3>
+          <p data-i18n="exp.t2.desc">صممت وطورت موقعًا متجاوبًا لوكالة سفر، مع تركيز على وضوح الخدمات وتجربة الاستخدام على الجوال.</p>
         </div>
         <div class="t-item reveal">
           <div class="t-marker">03</div>
           <span class="t-meta" data-i18n="exp.t3.meta">2018 — 2022</span>
           <h3 data-i18n="exp.t3.title">بكالوريوس الشرف في تقنية المعلومات</h3>
-          <p data-i18n="exp.t3.desc">جامعة العلوم والتقانة — مشروع التخرج تطبيق يعرض نتائج الطلاب بكلية العلوم والتقانة.
-          </p>
+          <p data-i18n="exp.t3.desc">جامعة العلوم والتقانة — أنجزت مشروع تخرج لتطوير تطبيق يعرض نتائج الطلاب بصورة منظمة وسهلة الوصول.</p>
         </div>
       </div>
     </section>
@@ -268,30 +328,20 @@
             <a href="mailto:ahcinbox1@gmail.com"><i>@</i> <span>ahcinbox1@gmail.com</span></a>
             <a href="https://wa.me/+256762852006" target="_blank" rel="noopener"><i>◈</i> <span
                 data-i18n="contact.whatsapp">راسلني على واتساب</span></a>
-            <a href="#"><i>◎</i> <span data-i18n="contact.location">السودان</span></a>
+            <a><i>◎</i> <span data-i18n="contact.location">السودان</span></a>
           </div>
           <div class="social-row">
             <a href="https://github.com/ahmed-98-wq" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
-            <a href="https://linkedin.com/in/ahmed-adam-profile" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
-            <a href="https://x.com/ahmed_adam_dev" target="_blank" rel="noopener" aria-label="X / تويتر">X</a>
+            <!-- <a href="https://linkedin.com/in/ahmed-adam-profile" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a> -->
+            <!-- <a href="https://x.com/ahmed_adam_dev" target="_blank" rel="noopener" aria-label="X / تويتر">X</a> -->
           </div>
         </div>
         <div class="contact-right">
-          <div class="terminal" style="animation:none; opacity:1; transform:none;">
-            <div class="term-bar">
-              <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
-              <span class="term-title">contact.sh</span>
-            </div>
-            <div class="term-body" style="direction:ltr; text-align:left;">
-              <span class="term-line">$ <span class="tk-kw">send</span> --to <span
-                  class="tk-str">"ahcinbox1@gmail.com"</span></span><br>
-              <!-- <span class="term-line" data-i18n="contact.term1">&gt; جاري تجهيز الرسالة...</span><br> -->
-              <br>
-              <span class="term-line" data-i18n="contact.term2">&gt; اضغط الزر تحت للنسخ ↓</span>
-            </div>
-            <div style="padding:0 22px 22px;">
-              <button class="copy-btn" id="copyEmail" data-i18n="contact.copy">نسخ البريد الإلكتروني</button>
-            </div>
+          <div class="contact-note">
+            <span class="contact-note-label" data-i18n="contact.noteLabel">رسالة قصيرة تكفي</span>
+            <p data-i18n="contact.noteBody">اكتب لي عن فكرتك، وما الذي تريد إنجازه، والوقت المتوقع. سأرد عليك بخطوات واضحة.</p>
+            <span class="contact-email">ahcinbox1@gmail.com</span>
+            <button class="copy-btn" id="copyEmail" data-i18n="contact.copy">نسخ البريد الإلكتروني</button>
           </div>
         </div>
       </div>
@@ -300,8 +350,8 @@
 
   <footer>
     <div class="wrap footer-row">
-      <span data-i18n="footer.rights">© 2024 أحمد ادم. جميع الحقوق محفوظة.</span>
-      <span class="mono">built with care, one commit at a time</span>
+      <span data-i18n="footer.rights">© 2026 أحمد آدم. جميع الحقوق محفوظة.</span>
+      <span class="mono">Designed & built by Ahmed Adam.</span>
     </div>
   </footer>
 
