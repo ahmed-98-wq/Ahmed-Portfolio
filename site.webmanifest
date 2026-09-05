@@ -1,0 +1,19 @@
+{
+  "name": "Ahmed Adam — Web Designer & Developer",
+  "short_name": "Ahmed Adam",
+  "description": "Fast, clear and responsive websites for small businesses and service teams.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
